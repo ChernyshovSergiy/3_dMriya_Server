@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="44.18" height="27.95" viewBox="0 0 44.18 27.95">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #144ad1;
+        stroke-miterlimit: 22.93;
+        stroke-width: 4.25px;
+      }
+    </style>
+  </defs>
+  <title>active-quest</title>
+  <polyline class="a" points="1.59 1.41 22.24 24.73 42.58 1.41"/>
+</svg>

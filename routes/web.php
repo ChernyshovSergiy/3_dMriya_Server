@@ -11,7 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return 'hello';
-});
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+], function() {
 
+    Route::get('/', function () {
+        return 'hello';
+    });
+
+    Route::group([
+        'prefix'    => 'admin',
+        'namespace' => 'Admin'
+    ], function (){
+        Route::get('/', 'DashboardController@index')->name('admin');
+        Route::resource('/languages', 'LanguagesController');
+        Route::get('/languages/toggle/{id}', 'LanguagesController@toggle');
+    });
+
+});

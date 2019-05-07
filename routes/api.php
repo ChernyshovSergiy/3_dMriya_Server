@@ -26,4 +26,8 @@ Route::prefix('v1')->group(function () {
         Route::get('/user', 'MeController@index');
         Route::get('/auth/logout', 'MeController@logout');
     });
+
+    Route::group(['prefix' => '/page', ['middleware' => 'throttle:20,5']], function () {
+        Route::post('/home', 'Pages\HomePageController@store');
+    });
 });
