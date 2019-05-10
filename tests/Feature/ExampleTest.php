@@ -12,7 +12,7 @@ class ExampleTest extends TestCase
     public function testBasicTest(): void
     {
         $response = $this->get('/');
-
+        $response->assertSee('laravel');
         $response->assertStatus(200);
     }
 

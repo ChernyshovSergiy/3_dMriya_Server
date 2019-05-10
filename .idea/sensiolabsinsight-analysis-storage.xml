@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SensioLabsInsightAnalysisStorage">
+    <option name="analysesList">
+      <list>
+        <InsightAnalysis duration="26" href="https://insight.sensiolabs.com/api/projects/381c0f1d-37c4-4cef-8de4-f79c3752c50a/analyses/1" nbViolations="406" nextGrade="SILVER" number="1" reference="ab6e6668b26213fe261c601bc78792f40afdff87" remediationCostForNextGrade="-1" />
+      </list>
+    </option>
+  </component>
+</project>

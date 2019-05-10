@@ -5,6 +5,8 @@ return[
     'action'                => 'Action',
     'article'               => 'Article',
     'title'                 => 'Title',
+    'headline'              => 'Headline',
+    'sub_headline'          => 'Sub Headline',
     'token'                 => 'Token',
     'remember_token'        => 'Remember token',
     'text'                  => 'Text',

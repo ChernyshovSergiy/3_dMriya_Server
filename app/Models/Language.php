@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\Methods\ToggleActive;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -32,12 +33,20 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Language extends Model
 {
+    use ToggleActive;
     protected $fillable = [
         'flag_country',
         'code',
         'iso',
         'file',
         'name'
+    ];
+
+    protected $hidden = [
+        'id',
+        'is_active',
+        'created_at',
+        'updated_at'
     ];
 
     public function addNewLanguage($request): void
@@ -59,25 +68,4 @@ class Language extends Model
         self::find($id)->delete();
     }
 
-    public function active()
-    {
-        $this->is_active = 1;
-        $this->save();
-    }
-
-    public function notActive()
-    {
-        $this->is_active = 0;
-        $this->save();
-    }
-
-    public function toggleActive($id)
-    {
-        $toggle = self::find($id);
-        if ($toggle->is_active === 0)
-        {
-            return $toggle->active();
-        }
-        return $toggle->notActive();
-    }
 }

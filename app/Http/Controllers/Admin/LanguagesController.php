@@ -32,7 +32,8 @@ class LanguagesController extends Controller
     {
         $this->model->addNewLanguage($request);
 
-        return redirect()->route('languages.index');
+        return redirect()->route('languages.index')
+            ->with('status', 'success');
     }
 
     public function edit($id)
@@ -47,14 +48,16 @@ class LanguagesController extends Controller
     {
         $this->model->editLanguage($request, $id);
 
-        return redirect()->route('languages.index');
+        return redirect()->route('languages.index')
+            ->with('message', 'languages update successful');
     }
 
     public function destroy($id)
     {
         $this->model->removeLanguage($id);
 
-        return redirect()->route('languages.index');
+        return redirect()->route('languages.index')
+            ->with('message', 'language delete successful');
     }
 
     public function toggle($id)

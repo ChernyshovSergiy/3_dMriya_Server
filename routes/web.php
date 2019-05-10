@@ -17,7 +17,7 @@ Route::group([
 ], function() {
 
     Route::get('/', function () {
-        return 'hello';
+        return view('welcome');
     });
 
     Route::group([
@@ -27,6 +27,8 @@ Route::group([
         Route::get('/', 'DashboardController@index')->name('admin');
         Route::resource('/languages', 'LanguagesController');
         Route::get('/languages/toggle/{id}', 'LanguagesController@toggle');
+        Route::resource('/contents', 'ContentController');
+        Route::get('/contents/toggle/{id}', 'ContentController@toggle');
     });
 
 });

@@ -7,15 +7,15 @@
             <span class="pull-right-container"></span>
         </a>
     </li>
-    {{--<li>--}}
-        {{--<a href="{{route('inf_menus.index')}}">--}}
-            {{--<i class="fa fa-bars"></i> <span>@lang('admin.menu')</span>--}}
-            {{--<span class="pull-right-container">--}}
-                  {{--<small class="label pull-right bg-red-gradient">{{ $not_active }}</small>--}}
-                  {{--<small class="label pull-right bg-green">{{ $is_active }}</small>--}}
-            {{--</span>--}}
-        {{--</a>--}}
-    {{--</li>--}}
+    <li>
+        <a href="{{route('contents.index')}}">
+            <i class="fa fa-bars"></i> <span>@lang('admin.content')</span>
+            <span class="pull-right-container">
+                  <small class="label pull-right bg-red-gradient">{{ $content_not_active }}</small>
+                  <small class="label pull-right bg-green">{{ $content_is_active }}</small>
+            </span>
+        </a>
+    </li>
     {{--<li>--}}
         {{--<a href="{{route('inf_pages.index')}}">--}}
             {{--<i class="fa fa-newspaper-o"></i> <span>@lang('admin.pages')</span>--}}
@@ -52,7 +52,15 @@
     </span>
         </a>
         <ul class="treeview-menu">
-            <li><a href="{{route('languages.index')}}"><i class="fa fa-language"></i> @lang('admin.languages')</a></li>
+            <li>
+                <a href="{{route('languages.index')}}">
+                    <i class="fa fa-language"></i> <span>@lang('admin.languages')</span>
+                    <span class="pull-right-container">
+                        <small class="label pull-right bg-red-gradient">{{ $language_not_active }}</small>
+                        <small class="label pull-right bg-green">{{ $language_is_active }}</small>
+                    </span>
+                </a>
+            </li>
             {{--<li><a href="{{route('id_documents.index')}}"><i class="fa fa-newspaper-o"></i> @lang('admin.documents_id')</a></li>--}}
             {{--<li><a href="{{route('countries.index')}}"><i class="fa fa-flag"></i> @lang('admin.countries')</a></li>--}}
             {{--<li><a href="{{route('social_links.index')}}"><i class="fa fa-share-alt"></i> @lang('admin.social_links')</a></li>--}}

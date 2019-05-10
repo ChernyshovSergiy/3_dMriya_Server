@@ -38,4 +38,24 @@ class ShowPageTest extends TestCase
         $response->assertSee(Lang::get('admin.edit_language'));
     }
 
+    /** @test */
+    public function content_route_index(): void
+    {
+        $response = $this->get('admin/contents');
+        $response->assertSee(Lang::get('admin.content'));
+    }
+
+    /** @test */
+    public function content_route_create(): void
+    {
+        $response = $this->get('admin/contents/create');
+        $response->assertSee(Lang::get('admin.add_content'));
+    }
+
+    /** @test */
+    public function content_route_edit(): void
+    {
+        $response = $this->get('admin/contents/1/edit');
+        $response->assertSee(Lang::get('admin.edit_content'));
+    }
 }

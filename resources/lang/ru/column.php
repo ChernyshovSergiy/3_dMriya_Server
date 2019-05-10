@@ -5,6 +5,8 @@ return[
     'action'                => 'Действия',
     'article'               => 'Статья',
     'title'                 => 'Заголовок',
+    'headline'              => 'Заглавие',
+    'sub_headline'          => 'Подзаголовок',
     'token'                 => 'Токин',
     'remember_token'        => 'Сохраненный токин',
     'text'                  => 'Текст',

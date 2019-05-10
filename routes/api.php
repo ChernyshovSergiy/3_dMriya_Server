@@ -28,6 +28,7 @@ Route::prefix('v1')->group(function () {
     });
 
     Route::group(['prefix' => '/page', ['middleware' => 'throttle:20,5']], function () {
-        Route::post('/home', 'Pages\HomePageController@store');
+        Route::get('/contents', 'Pages\ContentPageController@index');
+        Route::get('/languages', 'Pages\languagesController@index');
     });
 });

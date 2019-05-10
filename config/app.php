@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+//    'hideDefaultLocaleInURL' => env('LOCALIZATION_HIDE_DEFAULT_LOCALE', false),
     /*
     |--------------------------------------------------------------------------
     | Application Name
