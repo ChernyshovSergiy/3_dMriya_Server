@@ -29,6 +29,8 @@ Route::group([
         Route::get('/languages/toggle/{id}', 'LanguagesController@toggle');
         Route::resource('/contents', 'ContentController');
         Route::get('/contents/toggle/{id}', 'ContentController@toggle');
+        Route::resource('/menus', 'MenusController');
+        Route::get('/menus/toggle/{id}', 'MenusController@toggle');
     });
 
 });

@@ -28,7 +28,8 @@ Route::prefix('v1')->group(function () {
     });
 
     Route::group(['prefix' => '/page', ['middleware' => 'throttle:20,5']], function () {
-        Route::get('/contents', 'Pages\ContentPageController@index');
+        Route::post('/contents', 'Pages\ContentPageController@content');
+        Route::post('/menus', 'Pages\MenuPageController@menu');
         Route::get('/languages', 'Pages\languagesController@index');
     });
 });

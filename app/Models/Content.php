@@ -38,6 +38,7 @@ class Content extends Model
 
     protected $hidden = [
         'id',
+        'title',
         'is_active',
         'created_at',
         'updated_at'
@@ -56,7 +57,6 @@ class Content extends Model
 
     public function addContent($request): void
     {
-//        dd($request->all());
         $text = new static;
         $text->fill($request->all());
         $text->content = $text

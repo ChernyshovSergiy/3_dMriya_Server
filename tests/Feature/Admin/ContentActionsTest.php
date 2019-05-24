@@ -16,7 +16,7 @@ class ContentActionsTest extends TestCase
     /** @test
      * @throws \Exception
      */
-    public function add_content(): void
+    public function add_content() : void
     {
         $content = factory(Content::class)->make();
         $response = $this->post('admin/contents',[

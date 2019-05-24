@@ -1,0 +1,10 @@
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (1, 1, 'gb', 'en', 'en-GB', 'en-GB.js', 'English', '2019-05-07 15:18:16', '2019-05-09 12:41:42');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (2, 1, 'ru', 'ru', 'ru-RU', 'ru-RU.js', 'Русский', '2019-05-07 16:03:30', '2019-05-08 15:32:35');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (3, 1, 'es', 'es', 'es-ES', 'es-ES.js', 'Español', '2019-05-07 16:04:34', '2019-05-07 16:32:03');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (4, 1, 'ua', 'ua', 'uk-UA', 'uk-UA.js', 'Український', '2019-05-07 16:10:17', '2019-05-07 16:32:04');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (5, 1, 'de', 'de', 'de-DE', 'de-DE.js', 'Deutsch', '2019-05-07 16:11:04', '2019-05-07 16:32:06');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (6, 0, 'fr', 'fr', 'fr-FR', 'fr-FR.js', 'Le français', '2019-05-07 16:43:39', '2019-05-07 18:57:38');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (7, 0, 'it', 'it', 'it-IT', 'it-IT.js', 'Italiano', '2019-05-07 16:46:53', '2019-05-07 16:46:53');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (8, 0, 'sa', 'sa', 'ar-SA', 'ar-SA.js', 'العربية', '2019-05-07 16:48:29', '2019-05-07 16:48:29');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (9, 0, 'cn', 'cn', 'zh-CN', 'zh-CN.js', '中国', '2019-05-07 16:52:44', '2019-05-07 16:52:44');
+INSERT INTO `3_d_mriya`.languages (id, is_active, flag_country, code, iso, file, name, created_at, updated_at) VALUES (10, 0, 'jp', 'jp', 'ja-JP', 'ja-JP.js', '日本語', '2019-05-07 16:53:49', '2019-05-07 16:53:49');

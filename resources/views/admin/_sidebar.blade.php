@@ -8,6 +8,15 @@
         </a>
     </li>
     <li>
+        <a href="{{route('menus.index')}}">
+            <i class="fa fa-bars"></i> <span>@lang('admin.menu')</span>
+            <span class="pull-right-container">
+                  <small class="label pull-right bg-red-gradient">{{ $menu_not_active }}</small>
+                  <small class="label pull-right bg-green">{{ $menu_is_active }}</small>
+            </span>
+        </a>
+    </li>
+    <li>
         <a href="{{route('contents.index')}}">
             <i class="fa fa-bars"></i> <span>@lang('admin.content')</span>
             <span class="pull-right-container">

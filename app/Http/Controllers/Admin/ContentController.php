@@ -43,6 +43,7 @@ class ContentController extends Controller
 
     public function store(ValidateRequest $request)
     {
+//        dd($request->all());
         $this->model->addContent($request);
 
         return redirect()->route('contents.index')
