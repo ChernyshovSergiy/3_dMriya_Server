@@ -44,6 +44,12 @@ return[
     'not_video_section'         => 'don`t have video group section',
     'not_video_group'           => 'don`t have video group',
     'not_category'              => 'don`t have category',
+    'not_assigned'              => 'Not assigned',
+    'orders'                    => 'Orders',
+    'select_status'             => 'Select status',
+    'select_language'           => 'Select the language of communication with the client',
+    'link_google_disk_folder'   => 'link to Google Disk folder',
+    'select_executor'           => 'Select Executor',
 
     'dashboard_main'            => 'Dashboard',
 
@@ -69,6 +75,7 @@ return[
     'add_languages'             => 'Add Languages',
     'it_add_languages_here'	    => 'it add languages here',
     'name_format'	            => 'Name format!!! -> Український',
+    'email_format'	            => 'Email format!!! -> example@gmail.com',
     'localization_format'	    => 'localization format!!! -> uk-UA',
     'file_format'	            => 'File format!!! -> uk-UA.js',
     'edit_language'             => 'Edit Language',
@@ -259,12 +266,28 @@ return[
     'edit_answer'                => 'Edit Answer',
     'it_edit_answer_here'        => 'it edit answer here',
 
-    'terms'                      => 'Terms & Conditions ',
+    'terms'                      => 'Terms & Conditions',
     'listing_terms'              => 'Listing Terms',
     'it_all_terms_here'          => 'it all terms here',
     'add_term'                   => 'Add Term',
     'it_add_term_here'           => 'it add term here',
     'edit_term'                  => 'Edit Term',
     'it_edit_term_here'          => 'it edit term here',
+
+    'statuses'                   => 'Order Statuses',
+    'listing_statuses'           => 'Listing Statuses',
+    'it_all_statuses_here'	     => 'it all statuses here',
+    'add_status'                 => 'Add Status',
+    'it_add_statuses_here'	     => 'it add status here',
+    'edit_status'                => 'Edit Status',
+    'it_edit_status_here'        => 'it edit status here',
+
+    'modeling_orders'            => 'Modeling Orders',
+    'listing_modeling_orders'    => 'List of orders for modeling',
+    'it_all_conf_modeling_orders'=> 'all confirmed orders are collected here',
+    'add_modeling_order'         => 'Add Modeling Order',
+    'it_add_modeling_order_here' => 'it add modeling order here',
+    'edit_modeling_order'        => 'Edit Modeling Order',
+    'it_edit_modeling_order_here'=> 'it edit modeling order here',
 
 ];

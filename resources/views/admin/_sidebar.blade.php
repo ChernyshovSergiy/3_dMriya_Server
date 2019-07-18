@@ -7,6 +7,25 @@
             <span class="pull-right-container"></span>
         </a>
     </li>
+    <li class="treeview">
+        <a href="#">
+            <i class="fa fa-cart-arrow-down"></i> <span>@lang('admin.orders')</span>
+            <span class="pull-right-container">
+      <i class="fa fa-angle-left pull-right"></i>
+    </span>
+        </a>
+        <ul class="treeview-menu">
+            <li>
+                <a href="{{route('modelings.index')}}">
+                    <i class="fa fa-cube"></i> <span>@lang('admin.modeling_orders')</span>
+{{--                    <span class="pull-right-container">--}}
+{{--                        <small class="label pull-right bg-red-gradient">{{ $language_not_active }}</small>--}}
+{{--                        <small class="label pull-right bg-green">{{ $language_is_active }}</small>--}}
+{{--                    </span>--}}
+                </a>
+            </li>
+        </ul>
+    </li>
     <li>
         <a href="{{route('menus.index')}}">
             <i class="fa fa-bars"></i> <span>@lang('admin.menu')</span>
@@ -70,7 +89,7 @@
                     </span>
                 </a>
             </li>
-            {{--<li><a href="{{route('id_documents.index')}}"><i class="fa fa-newspaper-o"></i> @lang('admin.documents_id')</a></li>--}}
+            <li><a href="{{route('statuses.index')}}"><i class="fa fa-certificate"></i> @lang('admin.statuses')</a></li>
             {{--<li><a href="{{route('countries.index')}}"><i class="fa fa-flag"></i> @lang('admin.countries')</a></li>--}}
             {{--<li><a href="{{route('social_links.index')}}"><i class="fa fa-share-alt"></i> @lang('admin.social_links')</a></li>--}}
         </ul>
@@ -91,6 +110,6 @@
 
 
 
-    <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+    <li><a href="https://adminlte.io/docs" target="_blank"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
 </ul>
 

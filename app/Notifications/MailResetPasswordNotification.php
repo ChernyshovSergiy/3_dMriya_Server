@@ -7,6 +7,7 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Auth\Notifications\ResetPassword;
+use Lang;
 
 class MailResetPasswordNotification extends ResetPassword
 {
@@ -42,14 +43,14 @@ class MailResetPasswordNotification extends ResetPassword
     public function toMail($notifiable)
     {
 //        $link = url( "/reset-password/".$this->token );
-        $link = 'http://127.0.0.1:3000/reset-password/'.$this->token;
+        $link = env('FRONT_URL').'reset-password/'.$this->token;
         return (new MailMessage)
-            ->subject( 'Reset Password Notification' )
-            ->line('  You are receiving this email because we received a password reset request for your account.')
-            ->action('Reset Password', $link )
-            ->line('Thank you for using our application!')
-            ->line( "This password reset link will expire in ".config('auth.passwords.users.expire')." minutes" )
-            ->line( "If you did not request a password reset, no further action is required." );
+            ->subject(Lang::get('mail.reset_password_not'))
+            ->line(Lang::get('mail.reset_password_not_desc'))
+            ->action(Lang::get('mail.reset_password'), $link )
+            ->line(Lang::get('mail.thank_for_using'))
+            ->line( Lang::get('mail.password_reset_expire').config('auth.passwords.users.expire').Lang::get('mail.minutes') )
+            ->line( Lang::get('mail.did_not_request') );
     }
 
     /**

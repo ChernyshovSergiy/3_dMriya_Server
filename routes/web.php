@@ -31,6 +31,9 @@ Route::group([
         Route::get('/contents/toggle/{id}', 'ContentController@toggle');
         Route::resource('/menus', 'MenusController');
         Route::get('/menus/toggle/{id}', 'MenusController@toggle');
+        Route::resource('/statuses', 'StatusesController');
+        Route::resource('/modelings', 'ModelingOrderController');
+        Route::resource('/users', 'UsersController');
     });
 
 });

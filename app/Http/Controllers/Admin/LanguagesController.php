@@ -44,7 +44,7 @@ class LanguagesController extends Controller
             compact('language'));
     }
 
-    public function update(Request $request, $id)
+    public function update(ValidateRequest $request, $id)
     {
         $this->model->editLanguage($request, $id);
 

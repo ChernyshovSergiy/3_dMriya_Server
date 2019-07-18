@@ -9,10 +9,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Support\Facades\Password;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class AuthController extends Controller
 {
-    use SendsPasswordResetEmails, ResetsPasswords;
+    use SendsPasswordResetEmails, ResetsPasswords {
+        SendsPasswordResetEmails::broker insteadof ResetsPasswords;
+        ResetsPasswords::credentials insteadof SendsPasswordResetEmails;
+    }
 
 
     /**
@@ -20,6 +24,7 @@ class AuthController extends Controller
      */
     public function sendPasswordResetLink(Request $request)
     {
+        LaravelLocalization::setLocale($request->get('language'));
         return $this->sendResetLinkEmail($request);
     }
 

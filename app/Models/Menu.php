@@ -121,6 +121,9 @@ class Menu extends Model
 
     public function maxSortNumber() :int
     {
-        return self::max('id');
+        if (self::max('id') !== null ){
+            return self::max('id');
+        }
+        return 0;
     }
 }

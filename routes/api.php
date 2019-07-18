@@ -32,4 +32,12 @@ Route::prefix('v1')->group(function () {
         Route::post('/menus', 'Pages\MenuPageController@menu');
         Route::get('/languages', 'Pages\languagesController@index');
     });
+
+    Route::group(['prefix' => '/order', ['middleware' => 'throttle:20,5']], function () {
+        Route::post('/modeling', 'Orders\ModelingOrderController@store');
+        Route::get('/verify/{token}', 'Orders\ModelingOrderController@verify')->name('modelingOrder.verify');
+        Route::post('/countries', 'Orders\CountryListController@index');
+//        Route::post('/printing', 'Orders\PrintingOrderController@store');
+//        Route::post('/painting', 'Orders\PaintingOrderController@store');
+    });
 });
