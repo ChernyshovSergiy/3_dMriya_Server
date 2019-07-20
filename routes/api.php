@@ -37,6 +37,7 @@ Route::prefix('v1')->group(function () {
         Route::post('/modeling', 'Orders\ModelingOrderController@store');
         Route::get('/verify/{token}', 'Orders\ModelingOrderController@verify')->name('modelingOrder.verify');
         Route::post('/countries', 'Orders\CountryListController@index');
+        Route::post('/masks', 'Orders\CountryListController@mask');
 //        Route::post('/printing', 'Orders\PrintingOrderController@store');
 //        Route::post('/painting', 'Orders\PaintingOrderController@store');
     });
