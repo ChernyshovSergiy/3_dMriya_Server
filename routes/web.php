@@ -34,6 +34,7 @@ Route::group([
         Route::resource('/statuses', 'StatusesController');
         Route::resource('/modelings', 'ModelingOrderController');
         Route::resource('/users', 'UsersController');
+        Route::resource('/printings', 'PrintingOrderController');
     });
 
 });

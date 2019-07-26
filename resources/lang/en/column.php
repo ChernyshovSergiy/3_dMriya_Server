@@ -117,5 +117,11 @@ return[
     'page'	                => 'Page',
     'question'	            => 'Question',
     'answer'	            => 'Answer',
+    'option'	            => 'Option',
+    'address'	            => 'Address',
+    'size'	                => 'Size',
+    'print_mat'	            => 'Print Material',
+    'quality'	            => 'Quality',
+    'quantity'	            => 'Quantity'
 
 ];

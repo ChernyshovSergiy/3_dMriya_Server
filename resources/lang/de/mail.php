@@ -25,4 +25,7 @@ return[
     'into_browser'             => 'in Ihren Webbrowser:',
     'order_number'             => 'Ihrer Bestellung wird eine ID-Nummer zugewiesen:',
 
+    'printing_order_confirmation' => 'Auftragsbestätigung für 3D-Druck',
+    'your_make_printing_order' => 'Wenn Sie eine Bestellung für den 3D-Druck aufgeben',
+
 ];

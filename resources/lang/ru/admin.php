@@ -50,6 +50,10 @@ return[
     'select_language'           => 'Выберите язык общения с клиентом',
     'link_google_disk_folder'   => 'Ссылка на папку на Google Disk',
     'select_executor'           => 'Выберите Исполнителя',
+    'plastic'                   => 'Пластик',
+    'metal'                     => 'Метал',
+    'micron'                    => 'микрон',
+    'pieces'                    => ' штук',
 
     'dashboard_main'            => 'Статистика',
     'listing_image_category'    => 'Список Категорий Картинок',
@@ -288,4 +292,12 @@ return[
     'it_add_modeling_order_here' => 'здесь можно добавить заказ на моделирование',
     'edit_modeling_order'        => 'Изменить заказ на моделирование',
     'it_edit_modeling_order_here'=> 'здесь можно изменить заказ на моделирование',
+
+    'printing_orders'            => 'Заказы на печать',
+    'listing_printing_orders'    => 'Список заказы на печать',
+    'it_all_conf_printing_orders'=> 'здесь собраны все подтвержденные заказы',
+    'add_printing_order'         => 'Добавить Заказ на печать',
+    'it_add_printing_order_here' => 'здесь можно добавить заказ на печать',
+    'edit_printing_order'        => 'Изменить заказ на печать',
+    'it_edit_printing_order_here'=> 'здесь можно изменить заказ на печать',
 ];

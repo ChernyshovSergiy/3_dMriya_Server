@@ -50,6 +50,10 @@ return[
     'select_language'           => 'Select the language of communication with the client',
     'link_google_disk_folder'   => 'link to Google Disk folder',
     'select_executor'           => 'Select Executor',
+    'plastic'                   => 'Plastic',
+    'metal'                     => 'Metal',
+    'micron'                    => 'micron',
+    'pieces'                    => ' pieces',
 
     'dashboard_main'            => 'Dashboard',
 
@@ -289,5 +293,13 @@ return[
     'it_add_modeling_order_here' => 'it add modeling order here',
     'edit_modeling_order'        => 'Edit Modeling Order',
     'it_edit_modeling_order_here'=> 'it edit modeling order here',
+
+    'printing_orders'            => 'Printing Orders',
+    'listing_printing_orders'    => 'List of orders for printing',
+    'it_all_conf_printing_orders'=> 'all confirmed orders are collected here',
+    'add_printing_order'         => 'Add Printing Order',
+    'it_add_printing_order_here' => 'it add printing order here',
+    'edit_printing_order'        => 'Edit Printing Order',
+    'it_edit_printing_order_here'=> 'it edit printing order here',
 
 ];

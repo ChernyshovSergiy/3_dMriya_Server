@@ -71,4 +71,7 @@ return[
     'into_browser'             => 'into your web browser:',
     'order_number'             => 'Your order is assigned ID number:',
 
+    'printing_order_confirmation' => 'Order confirmation for 3D printing',
+    'your_make_printing_order' => 'If you placed an order for 3D printing',
+
 ];

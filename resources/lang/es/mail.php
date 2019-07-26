@@ -25,5 +25,8 @@ return[
     'into_browser'             => 'en su navegador web:',
     'order_number'             => 'Su pedido tiene asignado un número de identificación:',
 
+    'printing_order_confirmation' => 'Confirmación de pedido para impresión 3D',
+    'your_make_printing_order' => 'Si realiza un pedido de impresión 3D',
+
 
 ];

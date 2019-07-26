@@ -96,7 +96,7 @@ class Modeling extends Model
         $order->fill($fields->all());
         $order->setUserLanguage($fields->get('cLang'));
         $order->setTexturingModel($fields->get('checkbox'));
-        $order->status_id = 1;
+        $order->status_id = 2;
         $order->save();
 
         $order->generateToken();
@@ -131,7 +131,7 @@ class Modeling extends Model
 
     public static function getConfirmModelingOrders()
     {
-        return self::all()->where('status_id', '>','1');
+        return self::all()->where('status_id', '>','2');
     }
 
     public function getStatus()

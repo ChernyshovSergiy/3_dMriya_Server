@@ -24,6 +24,15 @@
 {{--                    </span>--}}
                 </a>
             </li>
+            <li>
+                <a href="{{route('printings.index')}}">
+                    <i class="fa fa-cubes"></i> <span>@lang('admin.printing_orders')</span>
+{{--                    <span class="pull-right-container">--}}
+{{--                        <small class="label pull-right bg-red-gradient">{{ $language_not_active }}</small>--}}
+{{--                        <small class="label pull-right bg-green">{{ $language_is_active }}</small>--}}
+{{--                    </span>--}}
+                </a>
+            </li>
         </ul>
     </li>
     <li>

@@ -25,4 +25,7 @@ return[
     'into_browser'                 => 'в ваш веб-браузер:',
     'order_number'                 => 'Вашому замовленню присвоєно номер:',
 
+    'printing_order_confirmation' => 'Підтвердження замовлення на 3D друк',
+    'your_make_printing_order' => 'Якщо Ви оформили замовлення на 3D друк',
+
 ];
